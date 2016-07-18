@@ -8,7 +8,7 @@ RUN yum install -y wget curl gcc libxml2-devel httpd-devel \
  	&& ./configure --prefix=/usr/local/php52 --with-apxs2=/usr/sbin/apxs \
  	&& make \
  	&& make install \
- 	&& rm -rf -rf /tmp/php-5.2.15*
+ 	&& rm -rf /tmp/php-5.2.15*
 
 WORKDIR /var/www/html
 
