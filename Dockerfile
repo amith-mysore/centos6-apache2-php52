@@ -12,5 +12,7 @@ RUN yum install -y wget curl gcc libxml2-devel httpd-devel \
 
 WORKDIR /var/www/html
 
+COPY php.conf /etc/httpd/conf.d/php.conf
+
 EXPOSE 80
 CMD ["apachectl",  "-DFOREGROUND"]
